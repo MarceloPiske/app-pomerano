@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/root.css">
+    <link rel="stylesheet" href="./styles/audio.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="preload" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <title>Aprenda Pomerano</title>
+</head>
+
+<body>
+    <!-- Aprenda Pomerano -->
+    <div class="container">
+        <nav>
+            <span id="info-app" class="material-icons-sharp">info</span>
+            <div><b>Aprenda Pomerano</b></div>
+        </nav>
+        <div id="audio-modal">
+            <nav id="nav-audios">
+                <span id="back-arrow" class="material-icons-sharp">arrow_back</span>
+                <div><b>Aprenda Pomerano</b></div>
+            </nav>
+            <div class="audios-content">
+            </div>
+        </div>
+        <div id="info-modal">
+            <nav id="nav-info">
+                <span id="back-arrow-info" class="material-icons-sharp">arrow_back</span>
+                <div><b>Sobre o aplicativo</b></div>
+            </nav>
+            <object data="./sobre.html" type="text/html"></object>
+        </div>
+        <div id="elements-content" class="elements-content">
+            <!-- inserido via JS function "estruture_data" -->
+        </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>

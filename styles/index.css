@@ -1,0 +1,99 @@
+
+.container {
+    overflow: hidden;
+}
+
+.container nav {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 15% auto;
+    font-size: 18px;
+    background-color: var(--color-primary-variant);
+    color: var(--color-white);
+    padding: 1rem;
+    position: fixed;
+    width: 100vw;
+    height: 2rem;
+    z-index: 1;
+}
+
+.elements-content {
+
+    margin-top: 2.5rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.elements-content a {
+    /* border: 5px solid #0975F9; */
+    position: relative;
+    margin: auto;
+    margin-top: 1rem;
+    background-color: var(--color-white);
+    width: 12rem;
+    height: 12rem;
+    border-radius: 1rem;
+}
+
+.elements-content a img {
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+    border-radius: 1rem;
+}
+
+.elements-content a span {
+    border-radius: .5rem;
+    color: #181a1e;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 17px;
+    padding: .5rem;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#audio-modal {
+    display: none;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: #363949;
+    padding-bottom: .5rem;
+}
+
+#audio-modal .audios-content {
+    margin-top: 3rem;
+}
+
+#audio-modal nav {
+    position: fixed;
+    margin-bottom: 5px;
+    z-index: 2;
+}
+
+#audio-modal .audios-content h2 {
+    margin-top: 5px;
+    color: #dce1eb;
+}
+
+#info-modal {
+    display: none;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: #363949;
+    padding-bottom: .5rem;
+}
+
+#info-modal object {
+    margin-top: 5vh;
+    width: 100vw;
+    height: 100vh;
+}
+
