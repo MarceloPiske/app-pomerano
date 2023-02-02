@@ -1,17 +1,30 @@
 const PATH = "app-pomerano"
+function getDirs() {
+  const fs = require('fs');
+  const dir = './sounds';
+
+  fs.readdir(dir , (err, arquivos) => {
+      ds = []
+      arquivos.forEach(arquivo => {
+          ds.push(`sounds/${arquivo}`)
+      
+      });
+      console.log(ds);
+  });
+}
 this.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open("v1").then(function (cache) {
       return cache.addAll([
         `${PATH}/`,
-        `${PATH}/images/resized_images/`,
         `${PATH}/index.html`,
         `${PATH}/sobre.html`,
+        `${PATH}/categories.json`,
         `${PATH}/styles/`,
         `${PATH}/scripts/`,
         `${PATH}/scripts/index.js`,
-        `${PATH}/categories.json`,
-        `${PATH}/sounds/`
+        `${PATH}/sounds/`,
+        `${PATH}/images/resized_images/`
       ]);
     })
   );
