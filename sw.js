@@ -1,4 +1,4 @@
-const PATH = "app-pomerano"
+const PATH = '.'//"app-pomerano"
 function getDirs() {
   const fs = require('fs');
   const dir = './sounds';
@@ -12,9 +12,11 @@ function getDirs() {
       console.log(ds);
   });
 }
+
 this.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open("v1").then(function (cache) {
+      getDirs()
       return cache.addAll([
         `${PATH}/`,
         `${PATH}/index.html`,

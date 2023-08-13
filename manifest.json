@@ -1,0 +1,24 @@
+{
+  "name": "Banco Imobiliário",
+  "short_name": "Pyske Banc",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "",
+  "dir": "auto",
+  "lang": "pt-br",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "web",
+      "url": "https://marcelopiske.github.io/app-pomerano/"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/app-pomerano/sw.js', { scope: '/app-pomerano/' })
+    navigator.serviceWorker.register('/sw.js', { scope: '/app-pomerano/' })
         .then(function (reg) {
             // registration worked
             console.log('Registration succeeded. Scope is ' + reg.scope);
