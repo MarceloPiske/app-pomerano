@@ -1,8 +1,6 @@
 {
   "short_name": "Aprenda Pomerano",
   "name": "Aprenda Pomerano",
-  "orientation": "portrait",
-  "categories": ["education"],
   "icons": [
     {
       "src": "/img/icon_512x512.png",
@@ -21,12 +19,17 @@
     }
   ],
   "id": "/?source=pwa",
-  "start_url": "/?source=pwa",
+  "start_url": "/",
   "background_color": "#677483",
-  "display": "standalone",
+  "display": "fullscreen",
   "scope": "/",
   "theme_color": "#0975F9",
-  
-  "description": "Aprenda Pomerano em qualquer lugar!"
- 
+  "description": "Aprenda Pomerano em qualquer lugar!",
+  "dir": "auto",
+  "lang": "pt",
+  "orientation": "any",
+  "display_override": [
+    "fullscreen",
+    "window-controls-overlay"
+  ]
 }
