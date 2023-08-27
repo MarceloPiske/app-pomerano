@@ -1,6 +1,8 @@
 {
   "short_name": "Aprenda Pomerano",
   "name": "Aprenda Pomerano",
+  "orientation": "portrait",
+  "categories": ["education"],
   "icons": [
     {
       "src": "/img/icon_512x512.png",
