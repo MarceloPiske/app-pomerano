@@ -452,7 +452,7 @@
     }
   ],
   "id": "/?source=pwa",
-  "start_url": "/",
+  "start_url": "/?source=pwa",
   "background_color": "#677483",
   "display": "fullscreen",
   "scope": "/",
