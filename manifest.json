@@ -1,24 +1,30 @@
 {
-  "name": "Banco Imobiliário",
-  "short_name": "Pyske Banc",
-  "start_url": ".",
-  "display": "standalone",
-  "background_color": "#fff",
-  "description": "",
-  "dir": "auto",
-  "lang": "pt-br",
-  "orientation": "portrait-primary",
+  "short_name": "Aprenda Pomerano",
+  "name": "Aprenda Pomerano",
   "icons": [
     {
-      "src": "./img/icon.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "/img/icon_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/img/icon_192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icon_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
-  "related_applications": [
-    {
-      "platform": "web",
-      "url": "https://marcelopiske.github.io/app-pomerano/"
-    }
-  ]
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
+  "background_color": "#677483",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#0975F9",
+  
+  "description": "Aprenda Pomerano em qualquer lugar!"
+ 
 }
