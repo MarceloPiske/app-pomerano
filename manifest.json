@@ -18,10 +18,10 @@
       "sizes": "512x512"
     }
   ],
-  "id": "/?source=pwa",
+  "id": "/?standalone=true&source=pwa",
   "start_url": "/app-pomerano/",
   "background_color": "#ff0b00",
-  "display": "standalone",
+  "display": "fullscreen",
   "scope": "/",
   "theme_color": "#0975F9",
   "description": "Aprenda Pomerano em qualquer lugar!",
