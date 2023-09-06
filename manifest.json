@@ -3,17 +3,17 @@
   "name": "Aprenda Pomerano",
   "icons": [
     {
-      "src": "/img/icon_512x512.png",
+      "src": "https://firebasestorage.googleapis.com/v0/b/teste-aprender-polmerano.appspot.com/o/icon.png?alt=media&token=18324c9c-b4f9-4638-8ec3-1527cb7bee5d",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "/img/icon_192x192.png",
+      "src": "https://firebasestorage.googleapis.com/v0/b/teste-aprender-polmerano.appspot.com/o/icon_192x192.png?alt=media&token=a89fbfcb-5644-4156-bb00-60059a12b9ef",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/img/icon_512x512.png",
+      "src": "https://firebasestorage.googleapis.com/v0/b/teste-aprender-polmerano.appspot.com/o/icon.png?alt=media&token=18324c9c-b4f9-4638-8ec3-1527cb7bee5d",
       "type": "image/png",
       "sizes": "512x512"
     }
