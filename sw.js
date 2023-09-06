@@ -1,4 +1,5 @@
 const PATH = "/app-pomerano"
+
 function getDirs() {
   const fs = require('fs');
   const dir = './sounds';
@@ -22,11 +23,11 @@ this.addEventListener("install", function (event) {
         `${PATH}/index.html`,
         `${PATH}/sobre.html`,
         `${PATH}/categories.json`,
-        `${PATH}/styles/`,
-        `${PATH}/scripts/`,
+        //`${PATH}/styles/`,
+        //`${PATH}/scripts/`,
         `${PATH}/scripts/index.js`,
-        `${PATH}/sounds/`,
-        `${PATH}/images/resized_images/`
+        //`${PATH}/sounds/`,
+        //`${PATH}/images/resized_images/`
       ]);
     })
   );
