@@ -1,4 +1,4 @@
-const PATH = "app-pomerano"
+const PATH = "/app-pomerano"
 function getDirs() {
   const fs = require('fs');
   const dir = './sounds';
