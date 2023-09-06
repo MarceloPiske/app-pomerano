@@ -16,7 +16,7 @@ function getDirs() {
 this.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open("v1").then(function (cache) {
-      getDirs()
+      //getDirs()
       return cache.addAll([
         `${PATH}/`,
         `${PATH}/index.html`,
