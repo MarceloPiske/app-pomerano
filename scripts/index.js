@@ -1,3 +1,11 @@
+// on iOS Safari
+window.navigator.standalone
+
+// on Android Chrome
+window.matchMedia(
+  '(display-mode: standalone)'
+).matches
+
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js', { scope: '/app-pomerano/' })
         .then(function (reg) {
