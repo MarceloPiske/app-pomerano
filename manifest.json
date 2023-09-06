@@ -22,7 +22,7 @@
   "start_url": "/app-pomerano/",
   "background_color": "#ff0b00",
   "display": "standalone",
-  "scope": "/app-pomerano/",
+  "scope": "https://marcelopiske.github.io/app-pomerano/",
   "theme_color": "#0975F9",
   "description": "Aprenda Pomerano em qualquer lugar!",
   "dir": "auto",
