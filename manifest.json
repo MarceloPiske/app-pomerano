@@ -18,11 +18,9 @@
       "sizes": "512x512"
     }
   ],
-  "id": "/?source=pwa",
   "start_url": "/app-pomerano/",
   "background_color": "#ff0b00",
-  "display": "fullscreen",
-  "scope": "https://marcelopiske.github.io/",
+  "display": "standalone",
   "theme_color": "#0975F9",
   "description": "Aprenda Pomerano em qualquer lugar!",
   "dir": "auto",
