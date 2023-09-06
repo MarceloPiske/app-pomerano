@@ -4,13 +4,13 @@ function getDirs() {
   const fs = require('fs');
   const dir = './sounds';
 
-  fs.readdir(dir , (err, arquivos) => {
-      ds = []
-      arquivos.forEach(arquivo => {
-          ds.push(`sounds/${arquivo}`)
-      
-      });
-      console.log(ds);
+  fs.readdir(dir, (err, arquivos) => {
+    ds = []
+    arquivos.forEach(arquivo => {
+      ds.push(`sounds/${arquivo}`)
+
+    });
+    console.log(ds);
   });
 }
 
@@ -33,16 +33,16 @@ this.addEventListener("install", function (event) {
   );
 });
 
-this.addEventListener("fetch", function(event) {
+this.addEventListener("fetch", function (event) {
   event.respondWith(
-    caches.match(event.request).then(function(resp) {
-      return resp || fetch(event.request).then(function(response) {
-        caches.open("v1").then(function(cache) {
+    caches.match(event.request).then(function (resp) {
+      return resp || fetch(event.request).then(function (response) {
+        caches.open("v1").then(function (cache) {
           cache.put(event.request, response.clone());
         });
         return response;
       });
-    }).catch(function() {
+    }).catch(function () {
       console.log("error cache");
       return caches.match("/");
     })

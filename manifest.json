@@ -3,7 +3,7 @@
   "name": "Aprenda Pomerano",
   "icons": [
     {
-      "src": "/img/icon_512x512.png",
+      "src": "/app-pomerano/img/icon_512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
@@ -13,7 +13,7 @@
       "sizes": "192x192"
     },
     {
-      "src": "/img/icon_512x512.png",
+      "src": "/app-pomerano/img/icon_512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
