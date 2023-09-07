@@ -1,4 +1,6 @@
-if ('serviceWorker' in navigator) {
+document.documentElement.requestFullscreen()
+
+/* if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js', { scope: '/app-pomerano/' })
         .then(function (reg) {
             // registration worked
@@ -7,7 +9,7 @@ if ('serviceWorker' in navigator) {
             // registration failed
             console.log('Registration failed with ' + error);
         });
-}
+} */
 
 IMAGE_PATH = "./images/resized_images/"
 const elements_content = document.querySelector("#elements-content")
