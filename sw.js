@@ -1,50 +1,47 @@
-const PATH = "/app-pomerano"
+// This is the "Offline page" service worker
 
-function getDirs() {
-  const fs = require('fs');
-  const dir = './sounds';
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
-  fs.readdir(dir, (err, arquivos) => {
-    ds = []
-    arquivos.forEach(arquivo => {
-      ds.push(`sounds/${arquivo}`)
+const CACHE = "pwabuilder-page";
 
-    });
-    console.log(ds);
-  });
-}
+// TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
+const offlineFallbackPage = "ToDo-replace-this-name.html";
 
-this.addEventListener("install", function (event) {
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.type === "SKIP_WAITING") {
+    self.skipWaiting();
+  }
+});
+
+self.addEventListener('install', async (event) => {
   event.waitUntil(
-    caches.open("v1").then(function (cache) {
-      //getDirs()
-      return cache.addAll([
-        `${PATH}/`,
-        `${PATH}/index.html`,
-        `${PATH}/sobre.html`,
-        `${PATH}/categories.json`,
-        //`${PATH}/styles/`,
-        //`${PATH}/scripts/`,
-        `${PATH}/scripts/index.js`,
-        //`${PATH}/sounds/`,
-        //`${PATH}/images/resized_images/`
-      ]);
-    })
+    caches.open(CACHE)
+      .then((cache) => cache.add(offlineFallbackPage))
   );
 });
 
-this.addEventListener("fetch", function (event) {
-  event.respondWith(
-    caches.match(event.request).then(function (resp) {
-      return resp || fetch(event.request).then(function (response) {
-        caches.open("v1").then(function (cache) {
-          cache.put(event.request, response.clone());
-        });
-        return response;
-      });
-    }).catch(function () {
-      console.log("error cache");
-      return caches.match("/");
-    })
-  );
+if (workbox.navigationPreload.isSupported()) {
+  workbox.navigationPreload.enable();
+}
+
+self.addEventListener('fetch', (event) => {
+  if (event.request.mode === 'navigate') {
+    event.respondWith((async () => {
+      try {
+        const preloadResp = await event.preloadResponse;
+
+        if (preloadResp) {
+          return preloadResp;
+        }
+
+        const networkResp = await fetch(event.request);
+        return networkResp;
+      } catch (error) {
+
+        const cache = await caches.open(CACHE);
+        const cachedResp = await cache.match(offlineFallbackPage);
+        return cachedResp;
+      }
+    })());
+  }
 });
