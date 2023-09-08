@@ -22,6 +22,8 @@
   "display": "standalone",
   "theme_color": "#0975F9",
   "description": "Aprenda Pomerano em qualquer lugar!",
-  "start_url": "/pwa?ref=homescreen&utm_source=homescreen&source=pwa",
-  "orientation": "portrait"
+  "start_url": "/app-pomerano/",
+  "orientation": "portrait",
+  "id": "marcelopiske.github.io/app-pomerano/",
+  "lang": "pt"
 }
