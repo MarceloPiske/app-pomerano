@@ -1,11 +1,13 @@
 {
-    "web_apps": [
-      {
-        "manifest": "https://marcelopiske.github.io/manifest.json",
-        "details": {
-          "paths": ["*"],
-          "exclude_paths": []
-        }
+  "web_apps": [
+    {
+      "manifest": "https://marcelopiske.github.io/manifest.json",
+      "details": {
+        "paths": [
+          "*"
+        ],
+        "exclude_paths": []
       }
-    ]
-  }
+    }
+  ]
+}
