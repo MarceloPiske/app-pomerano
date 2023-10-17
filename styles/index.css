@@ -5,23 +5,28 @@
 
 .container nav {
     cursor: pointer;
-    display: grid;
-    grid-template-columns: 15% auto;
-    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5rem;
+    /* grid-template-columns: 15% auto; */
+    font-size: 3.5rem;
     background-color: var(--color-primary-variant);
     color: var(--color-white);
     padding: 1rem;
     position: fixed;
     width: 100vw;
-    height: 2rem;
+    height: 5vh;
     z-index: 1;
 }
-
+#info-app {
+    font-size: 5rem;
+}
 .elements-content {
-    margin-top: 2.5rem;
-    padding: 1rem;
+    margin-top: calc(5vh + 5rem);
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 50vw;
 }
 
 .elements-content a {
@@ -30,53 +35,27 @@
     margin: auto;
     margin-top: 1rem;
     background-color: var(--color-white);
-    width: 12rem;
-    height: 12rem;
-    border-radius: 1rem;
+    width: 45vw;
+    min-height: 45vw;
+    border-radius: 2.5rem;
 }
 
 .elements-content a img {
-    height: 100%;
+    min-height: 45vw;
     width: 100%;
     object-fit: cover;
-    border-radius: 1rem;
+    border-radius: 2.5rem;
 }
 
 .elements-content a span {
     border-radius: .5rem;
     color: #181a1e;
     position: absolute;
-    left: 5px;
-    bottom: 5px;
-    font-size: 17px;
+    left: 10px;
+    bottom: 10px;
+    font-size: 3rem;
     padding: .5rem;
     background-color: rgba(255, 255, 255, 0.7);
-}
-
-#audio-modal {
-    display: none;
-    overflow-y: auto;
-    position: fixed;
-    z-index: 1;
-    width: 100vw;
-    height: 100vh;
-    background-color: #363949;
-    padding-bottom: .5rem;
-}
-
-#audio-modal .audios-content {
-    margin-top: 3rem;
-}
-
-#audio-modal nav {
-    position: fixed;
-    margin-bottom: 5px;
-    z-index: 2;
-}
-
-#audio-modal .audios-content h2 {
-    margin-top: 5px;
-    color: #dce1eb;
 }
 
 #info-modal {
@@ -96,6 +75,13 @@
     height: 100vh;
 }
 
+#back-arrow {
+    font-size: 5rem;
+}
+
+#back-arrow-info {
+    font-size: 5rem;
+}
 /* @media screen and (max-width: 720px) {
     .container {
         height: 100%;

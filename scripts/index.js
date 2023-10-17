@@ -1,4 +1,4 @@
-document.documentElement.requestFullscreen()
+//document.documentElement.requestFullscreen()
 
 /* if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js', { scope: '/app-pomerano/' })
