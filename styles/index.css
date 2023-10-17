@@ -18,7 +18,6 @@
 }
 
 .elements-content {
-
     margin-top: 2.5rem;
     padding: 1rem;
     display: grid;
@@ -97,3 +96,17 @@
     height: 100vh;
 }
 
+@media screen and (max-width: 720px) {
+    .container {
+        height: 100%;
+        width: 100%;
+    }
+    .elements-content {
+        height: 100%;
+        width: 100%;
+    }
+    .elements-content a {
+        width: 30rem;
+        height: 30rem;
+    }
+}
