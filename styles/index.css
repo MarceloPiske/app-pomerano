@@ -96,7 +96,7 @@
     height: 100vh;
 }
 
-@media screen and (max-width: 720px) {
+/* @media screen and (max-width: 720px) {
     .container {
         height: 100%;
         width: 100%;
@@ -109,4 +109,4 @@
         width: 30rem;
         height: 30rem;
     }
-}
+} */
